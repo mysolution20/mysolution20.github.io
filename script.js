@@ -23,10 +23,10 @@ $(document).ready(function () {
     function createElement(data) {
         const element = $(datatableRowTemplate).clone();
         element.attr('data-task-id', data.id);
-        element.find('[data-task-name-section] [data-task-nameparagraph]').text(data.title);
-        element.find('[data-task-name-section] [data-task-nameinput]').val(data.title);
-        element.find('[data-task-content-section] [data-task-contentparagraph]').text(data.content);
-        element.find('[data-task-content-section] [data-task-contentinput]').val(data.content);
+        element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.title);
+        element.find('[data-task-name-section] [data-task-name-input]').val(data.title);
+        element.find('[data-task-content-section] [data-task-content-paragraph]').text(data.content);
+        element.find('[data-task-content-section] [data-task-content-input]').val(data.content);
         return element;
     }
 
